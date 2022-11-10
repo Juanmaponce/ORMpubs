@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsNorthwind", "WindowsFormsNorthwind\WindowsFormsNorthwind.csproj", "{7A241E81-D203-4910-80D6-801D68B8D882}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsPubs", "WindowsFormsPubs\WindowsFormsPubs.csproj", "{3012E5E8-CE2B-466E-8D0E-52E042B64EE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A241E81-D203-4910-80D6-801D68B8D882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A241E81-D203-4910-80D6-801D68B8D882}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A241E81-D203-4910-80D6-801D68B8D882}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A241E81-D203-4910-80D6-801D68B8D882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3012E5E8-CE2B-466E-8D0E-52E042B64EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3012E5E8-CE2B-466E-8D0E-52E042B64EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3012E5E8-CE2B-466E-8D0E-52E042B64EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3012E5E8-CE2B-466E-8D0E-52E042B64EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19F32B9E-1C2A-4737-930A-5432F12B1E35}
+	EndGlobalSection
+EndGlobal
