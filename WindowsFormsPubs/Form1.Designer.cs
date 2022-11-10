@@ -33,6 +33,7 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnTraer = new System.Windows.Forms.Button();
             this.gridPublishers = new System.Windows.Forms.DataGridView();
+            this.txtId = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridPublishers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,11 +85,19 @@
             this.gridPublishers.Size = new System.Drawing.Size(240, 150);
             this.gridPublishers.TabIndex = 4;
             // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(570, 79);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(100, 20);
+            this.txtId.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.gridPublishers);
             this.Controls.Add(this.btnTraer);
             this.Controls.Add(this.btnEliminar);
@@ -98,6 +107,7 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.gridPublishers)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -108,6 +118,7 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnTraer;
         private System.Windows.Forms.DataGridView gridPublishers;
+        private System.Windows.Forms.TextBox txtId;
     }
 }
 

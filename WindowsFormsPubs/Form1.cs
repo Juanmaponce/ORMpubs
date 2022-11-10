@@ -63,7 +63,7 @@ namespace WindowsFormsPubs
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            string id = "5005";
+            string id = txtId.Text;
             Publisher publisherDB = context.Publishers.Find(id);
 
             if (publisherDB != null)
