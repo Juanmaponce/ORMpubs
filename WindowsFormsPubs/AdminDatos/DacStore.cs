@@ -27,23 +27,30 @@ namespace WindowsFormsPubs.AdminDatos
             int filasAfectadas = context.SaveChanges();
             return filasAfectadas;
         }
-        public int Modificar(Store storeNuevo)
+        public int Modificar(Store store)
         {
-            Store store = context.Stores.Find(storeNuevo.Stor_id);
-            if (store != null)
+            Store storeAModificar = new Store();
+            storeAModificar = context.Stores.Find(store.Stor_id);
+            if (storeAModificar != null)
             {
-                store = storeNuevo;
+                storeAModificar.Stor_address = "Address 1";
+                storeAModificar.Stor_name ="Nombre 1" ;
+                storeAModificar.City = "ciudad 1";
+                storeAModificar.State = "SS";
+                storeAModificar.Zip = "4000";
             }
             int filasAfectadas = context.SaveChanges();
             return filasAfectadas;
         }
         public int Eliminar(Store store)
         {
+            var storeEliminada = context.Stores.Find(store.Stor_id);
 
             if (store != null)
             {
-                // context.Stores.Remove(store);
-                context.Entry(store).State = System.Data.Entity.EntityState.Deleted;
+                //context.Stores.Attach(store);
+                 context.Stores.Remove(storeEliminada);
+                //context.Entry(store).State = System.Data.Entity.EntityState.Deleted;
             }
             else
             {

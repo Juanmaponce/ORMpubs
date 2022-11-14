@@ -47,6 +47,19 @@ namespace WindowsFormsPubs
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
+            string id = "4454";
+            Store storeAModificar = pubsContext.Stores.Find(id);
+
+            int filasAfectadas = dacStore.Modificar(storeAModificar);
+
+            if (filasAfectadas > 0)
+            {
+                MessageBox.Show("OK Modificado");
+            }
+            else
+            {
+                MessageBox.Show("No existe el objeto");
+            }
 
         }
 
